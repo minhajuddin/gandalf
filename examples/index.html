@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>Gandalf demo</title>
+    <script src='../lib/jquery-1.4.2.min.js' type="text/javascript" charset="utf-8"></script>
+    <script src='../gandalf.js' type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" charset="utf-8">
+      $(function(){
+          $("#container").gandalf({next:$("input.next"), prev:$("input.prev")});
+      })
+    </script>
+  </head>
+  <body>
+    <div id='container'>
+      <div class='step'>
+        <h1>First step</h1>
+      </div>
+      <div class='step'>
+        <h1>Second step</h1>
+      </div>
+      <div class='step'>
+        <h1>Third step</h1>
+      </div>
+      <div class='step'>
+        <h1>Fourth step</h1>
+      </div>
+      <div>
+        <input type='button' value='Next' class='next' />
+        <input type='button' value='Previous' class='prev' />
+      </div>
+    </div>
+  </body>
+</html>
